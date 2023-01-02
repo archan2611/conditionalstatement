@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> Nested if blocks</h1>
+        {% if a > b %}
+            {% if a > c %}
+            <h1> a is max </h1>
+            <h1> if block inner if block </h1>
+            {% else %}
+            <h1> c is max </h1>
+            <h1> if block inner else block </h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+            <h1> b is max </h1>
+            <h1> else block inner if block </h1>
+            {% else %}
+            <h1> c is max </h1>
+            <h1> else block inner else block </h1>
+            {% endif %}
+        {% endif %}
+    </center>
+    
+</body>
+</html>
